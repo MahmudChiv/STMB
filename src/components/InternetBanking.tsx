@@ -1,25 +1,24 @@
-import React from 'react';
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import { assets } from '../assets/assets';
 import { Link } from 'react-router-dom';
 
 const InternetBanking = () => {
   return (
-    <div className="internet-banking-page d-flex align-items-center justify-content-center vh-100 bg-light-green">
-      <Container>
-        <Row className="justify-content-center">
-          <Col md={6} lg={4}>
-            <Card className="p-4 shadow-lg border-0 text-center internet-banking-card">
+    <div className="internet-banking-page vh-100">
+      <Container fluid className="h-100">
+        <Row className="h-100">
+          <Col md={6} className="d-flex align-items-center justify-content-center bg-light-green">
+            <Card className="p-5 shadow-lg border-0 text-center" style={{minWidth: "450px"}}>
               <img src={assets.logo} alt="Swift Trust MFB Logo" className="mb-4 mx-auto" style={{ maxWidth: '155px' }} />
-              <h3 className="mb-4 text-primary fw-bold">Internet Banking Login</h3>
+              <h2 className="mb-4 text-primary fw-bold">Internet Banking Login</h2>
               <Form>
-                <Form.Group className="mb-3" controlId="formBasicUsername">
-                  <Form.Control type="text" placeholder="Username" className="form-control-custom" />
+                <Form.Group className="mb-4" controlId="formBasicUsername">
+                  <Form.Control type="text" placeholder="Username" className="form-control-lg" />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Control type="password" placeholder="Password" className="form-control-custom" />
+                <Form.Group className="mb-4" controlId="formBasicPassword">
+                  <Form.Control type="password" placeholder="Password" className="form-control-lg" />
                 </Form.Group>
-                <Form.Group className="mb-3 d-flex justify-content-between align-items-center">
+                <Form.Group className="mb-4 d-flex justify-content-between align-items-center">
                   <Form.Check type="checkbox" label="Remember for 30 days" className="text-secondary" />
                   <Link to="#forgot-password" className="text-primary small">Forgot Password?</Link>
                 </Form.Group>
@@ -31,6 +30,9 @@ const InternetBanking = () => {
                 </p>
               </Form>
             </Card>
+          </Col>
+          <Col md={6} className="p-0">
+            <img src={assets.banking} alt="Internet Banking" className="w-100" style={{ objectFit: 'cover' }} />
           </Col>
         </Row>
       </Container>

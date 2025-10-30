@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, Carousel, Container, Row, Col } from "react-bootstrap";
 
 const Testimonials = () => {

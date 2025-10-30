@@ -28,7 +28,7 @@ const NavBar: React.FC = () => {
             <Nav.Link href="#contact" className="mx-2">Contact</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link as={Link} to="/internet-banking" className="mx-2">Internet Banking</Nav.Link>
+            <Nav.Link as={Link} to="/internet-banking" target="_blank" className="mx-2">Internet Banking</Nav.Link>
             <Button variant="primary" className="btn-primary">Login</Button>
           </Nav>
         </Navbar.Collapse>

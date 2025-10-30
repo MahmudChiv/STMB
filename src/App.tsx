@@ -12,12 +12,22 @@ import Business from "./components/Business";
 import AnimatedSection from "./components/AnimatedSection";
 import AboutUs from "./components/AboutUs";
 import InternetBanking from "./components/InternetBanking"
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <Router>
+      <Routes>
+        <Route path="/internet-banking" element={<InternetBanking />} />
+        <Route path="/*" element={<MainLayout />} />
+      </Routes>
+    </Router>
+  );
+};
+
+const MainLayout = () => {
+  return (
+    <>
       <NavBar />
       <Routes>
         <Route path="/" element={
@@ -33,11 +43,10 @@ const App = () => {
           </>
         } />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/internet-banking" element={<InternetBanking />} />
       </Routes>
       <Footer />
-    </Router>
-  );
-};
+    </>
+  )
+}
 
 export default App;

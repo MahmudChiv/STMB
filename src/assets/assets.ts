@@ -4,6 +4,7 @@ import promo2 from "./promo2.png";
 import promo3 from "./promo3.png";
 import promo4 from "./promo4.png";
 import promo5 from "./promo5.png";
+import banking from "./Banking.jpg";
 
 
 export const assets = {
@@ -12,5 +13,6 @@ export const assets = {
   promo2,
   promo3,
   promo4,
-  promo5
+  promo5,
+  banking
 };

@@ -11,7 +11,7 @@ const Hero = () => {
               Experience banking that goes beyond transactions. Swift Trust MFB empowers your dreams with innovative, secure, and accessible financial solutions.
             </p>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <Button variant="primary" size="lg" className="btn-primary me-sm-3">Open an Account</Button>
+              <Button variant="accent" size="lg" className="btn-accent me-sm-3">Open an Account</Button>
               <Button variant="outline-light" size="lg" className="btn-accent">Learn More</Button>
             </div>
           </Col>

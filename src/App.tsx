@@ -1,19 +1,42 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "./components/Navbar";
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
 import Promotion from "./components/Promotion";
 import Community from "./components/Community";
 import News from "./components/News";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
+import Business from "./components/Business";
+import AnimatedSection from "./components/AnimatedSection";
+import AboutUs from "./components/AboutUs";
+import InternetBanking from "./components/InternetBanking"
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
+    <Router>
       <NavBar />
-      <Promotion />
-      <Community />
-      <News />
-      <Contact />
-    </>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Hero />
+            <AnimatedSection><Services /></AnimatedSection>
+            <AnimatedSection><Business /></AnimatedSection>
+            <AnimatedSection><Promotion /></AnimatedSection>
+            <AnimatedSection><Community /></AnimatedSection>
+            <AnimatedSection><Testimonials /></AnimatedSection>
+            <AnimatedSection><News /></AnimatedSection>
+            <AnimatedSection><Contact /></AnimatedSection>
+          </>
+        } />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/internet-banking" element={<InternetBanking />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 

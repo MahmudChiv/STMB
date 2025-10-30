@@ -1,0 +1,340 @@
+:root {
+  --primary-color: #28a745; /* Vibrant Green */
+  --secondary-color: #343a40; /* Dark Grey/Black */
+  --accent-color: #218838; /* Slightly darker green */
+  --background-color: #f0fdf4; /* Very light green */
+  --text-color: #212529; /* Dark text */
+  --light-text-color: #ffffff; /* White text */
+  --border-color: #c3e6cb; /* Light green border */
+
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  font-family: var(--font-family-sans-serif);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Basic resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--secondary-color); /* Lighter green for small paragraphs */
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility classes for spacing, if needed */
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+
+.py-3 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-4 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.py-5 { padding-top: 3rem; padding-bottom: 3rem; }
+
+.px-3 { padding-left: 1rem; padding-right: 1rem; }
+.px-4 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-5 { padding-left: 3rem; padding-right: 3rem; }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container { max-width: 540px; }
+}
+@media (min-width: 768px) {
+  .container { max-width: 720px; }
+}
+@media (min-width: 992px) {
+  .container { max-width: 960px; }
+}
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
+
+.text-center { text-align: center; }
+.text-primary { color: var(--primary-color) !important; }
+.text-accent { color: var(--accent-color) !important; }
+.bg-primary { background-color: var(--primary-color) !important; }
+.bg-accent { background-color: var(--accent-color) !important; }
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--light-text-color);
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+  color: var(--light-text-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color); /* Use accent for hover */
+  border-color: var(--accent-color);
+  transform: scale(1.05); /* Bloom effect */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Bloom effect */
+}
+
+.btn-accent {
+  color: var(--light-text-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-accent:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: scale(1.05); /* Bloom effect */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Bloom effect */
+}
+
+/* Navbar specific styling */
+.navbar {
+  background-color: var(--primary-color) !important; /* Green nav background */
+}
+
+.navbar .nav-link, .navbar-brand {
+  color: var(--light-text-color) !important;
+}
+
+.navbar .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.hero-section {
+  background-color: var(--background-color); /* Very light green background */
+  color: var(--text-color);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.hero-section h1 {
+  color: var(--primary-color); /* Ensure heading is green */
+}
+
+.hero-section .btn-primary {
+  background-color: var(--secondary-color); /* Darker button for contrast */
+  border-color: var(--secondary-color);
+}
+
+.hero-section .btn-primary:hover {
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+.hero-section .btn-accent {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.hero-section .btn-accent:hover {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+.service-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.service-icon svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover .service-icon svg {
+  transform: scale(1.1);
+}
+
+.promotion-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.promotion-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.promotion-card .card-img-top {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area */
+}
+
+.loan-calculator-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.community-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.community-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.community-card .card-img-top {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area */
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  color: var(--text-color);
+  border-radius: 10px;
+}
+
+.testimonial-card .blockquote-footer cite {
+  color: var(--primary-color);
+}
+
+.news-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-card .card-img-top {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area */
+}
+
+.contact-form-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.contact-form-card .form-label {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.contact-form-card .form-control {
+  border-radius: 0.25rem;
+  border-color: var(--border-color);
+}
+
+.contact-form-card .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-content-animated {
+  animation: slideUp 1.5s ease-out forwards; /* Increased duration to 1.5s */
+  animation-delay: 0.5s; /* Keep delay */
+  opacity: 0; /* Start invisible */
+}
+
+.internet-banking-page {
+  background-color: var(--background-color); /* Use the light green background */
+}
+
+.internet-banking-card {
+  background-color: #ffffff; /* White card background */
+  border-radius: 10px;
+}
+
+.form-control-custom {
+  border-radius: 0.25rem;
+  border-color: var(--border-color);
+}
+
+.form-control-custom:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25); /* Green shadow on focus */
+}

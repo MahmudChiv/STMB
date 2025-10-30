@@ -1,53 +1,40 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import React from "react";
 import { assets } from "../assets/assets";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Link } from "react-router-dom"; // New import
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-success">
-      <Container fluid>
-        <Navbar.Brand href="#home">
+    <Navbar bg="white" expand="lg" className="shadow-sm py-3">
+      <Container>
+        <Navbar.Brand as={Link} to="/"> {/* Use Link for brand */}
           <img
             src={assets.logo}
+            height="30"
+            className="d-inline-block align-top"
             alt="Swift Trust MFB Logo"
-            width={150}
-            height={50}
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#pricing">About</Nav.Link>
-            <NavDropdown title="Services" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Microloans</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Savings & Deposits
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                SwiftPay POS Solutions
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Digital Banking
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
-            <Nav.Link href="#pricing">Management</Nav.Link>
-            <Nav.Link href="#pricing">Board</Nav.Link>
+            <Nav.Link as={Link} to="/" className="mx-2">Home</Nav.Link> {/* Use Link for Home */}
+            <Nav.Link as={Link} to="/about" className="mx-2">About Us</Nav.Link> {/* New About Us Link */}
+            <Nav.Link href="#services" className="mx-2">Services</Nav.Link>
+            <Nav.Link href="#business" className="mx-2">Business</Nav.Link>
+            <Nav.Link href="#promotions" className="mx-2">Promotions</Nav.Link>
+            <Nav.Link href="#community" className="mx-2">Community</Nav.Link>
+            <Nav.Link href="#news" className="mx-2">News</Nav.Link>
+            <Nav.Link href="#contact" className="mx-2">Contact</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Internet Banking</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Download App
-            </Nav.Link>
+            <Nav.Link as={Link} to="/internet-banking" className="mx-2">Internet Banking</Nav.Link>
+            <Button variant="primary" className="btn-primary">Login</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;

@@ -9,22 +9,22 @@ const Promotion = () => {
       text: "Enjoy secure payments worldwide with our Verve debit card.",
     },
     {
-      image: assets.promo2,
+      image: assets.pos,
       title: "SwiftPay POS Terminals",
       text: "Fast and reliable POS solutions for your business.",
     },
     {
-      image: assets.promo3,
+      image: assets.quickLoans,
       title: "Quick Loans",
       text: "Get instant loans with flexible repayment plans.",
     },
     {
-      image: assets.promo4,
+      image: assets.savings,
       title: "Joint Savings Account",
       text: "Save together, achieve goals faster with our joint savings plan.",
     },
     {
-      image: assets.promo5,
+      image: assets.posMerchant,
       title: "Become a POS Merchant",
       text: "Expand your earnings by becoming a SwiftPay POS agent.",
     },

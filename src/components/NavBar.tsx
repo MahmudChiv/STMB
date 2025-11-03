@@ -21,15 +21,14 @@ const NavBar: React.FC = () => {
             <Nav.Link as={Link} to="/" className="mx-2">Home</Nav.Link> {/* Use Link for Home */}
             <Nav.Link as={Link} to="/about" className="mx-2">About Us</Nav.Link> {/* New About Us Link */}
             <Nav.Link href="#services" className="mx-2">Services</Nav.Link>
-            <Nav.Link href="#business" className="mx-2">Business</Nav.Link>
-            <Nav.Link href="#promotions" className="mx-2">Promotions</Nav.Link>
+
             <Nav.Link href="#community" className="mx-2">Community</Nav.Link>
             <Nav.Link href="#news" className="mx-2">News</Nav.Link>
             <Nav.Link href="#contact" className="mx-2">Contact</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link as={Link} to="/internet-banking" target="_blank" className="mx-2">Internet Banking</Nav.Link>
-            <Button variant="primary" className="btn-primary">Login</Button>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

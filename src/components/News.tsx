@@ -3,19 +3,19 @@ import { assets } from "../assets/assets";
 
 const newsArticles = [
   {
-    image: assets.promo4, // Using promo4 for variety
+    image: assets.digitalLunch,
     title: "SwiftTrust Launches New Digital Service",
     text: "Our latest service is designed to make your banking experience faster, easier, and more secure.",
     link: "#",
   },
   {
-    image: assets.promo5, // Using promo5 for variety
+    image: assets.reward,
     title: "Customer Reward Program Activated",
     text: "Loyal customers can now enjoy exclusive rewards when they bank with SwiftTrust.",
     link: "#",
   },
   {
-    image: assets.promo3, // Using promo3 for variety
+    image: assets.communityProject,
     title: "SwiftTrust Community Project Update",
     text: "Partnering with local organizations to support youth empowerment and financial inclusion.",
     link: "#",

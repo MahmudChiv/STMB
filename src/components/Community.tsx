@@ -3,32 +3,32 @@ import { assets } from "../assets/assets";
 
 const communityInitiatives = [
   {
-    image: assets.promo1, // Using promo1 for variety
+    image: assets.financialLiteracy,
     title: "Financial Literacy",
     text: "Empowering individuals and SMEs with knowledge to make smart financial decisions.",
   },
   {
-    image: assets.promo2, // Using promo2 for variety
+    image: assets.women,
     title: "Women Empowerment",
     text: "Supporting women entrepreneurs through access to credit and mentorship.",
   },
   {
-    image: assets.promo3, // Using promo3 for variety
+    image: assets.businesses,
     title: "Supporting Businesses",
     text: "Helping SMEs scale up with loans, POS terminals, and business advisory services.",
   },
   {
-    image: assets.promo4, // Using promo4 for variety
+    image: assets.youth,
     title: "Youth Empowerment",
     text: "Training and mentorship for young people to build careers in fintech and banking.",
   },
   {
-    image: assets.promo5, // Using promo5 for variety
+    image: assets.trust,
     title: "Built on Trust",
     text: "Your security and trust are our priority — insured by NDIC and licensed by CBN.",
   },
   {
-    image: assets.promo1, // Reusing promo1 for the 6th initiative
+    image: assets.community,
     title: "Community Partnerships",
     text: "Partnering with NGOs and government to reach underserved communities.",
   },

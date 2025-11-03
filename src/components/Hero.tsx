@@ -1,19 +1,23 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { assets } from "../assets/assets";
 
 const Hero = () => {
   return (
-    <div className="hero-section text-center py-5">
-      <Container className="py-5">
-        <Row className="justify-content-center">
-          <Col lg={8} md={10} className="hero-content-animated">
-            <h1 className="display-3 fw-bold mb-3">Your Financial Journey, Elevated.</h1>
+    <div className="hero-section py-6" style={{ backgroundColor: "#f5f5f5" }}>
+      <Container>
+        <Row className="align-items-center">
+          <Col lg={6} md={12} className="slide-up-animation">
+            <h1 className="display-4 fw-bold mb-3">Seamless & Secure Digital Banking</h1>
             <p className="lead mb-4">
-              Experience banking that goes beyond transactions. Swift Trust MFB empowers your dreams with innovative, secure, and accessible financial solutions.
+              Join millions who trust us for fast, secure, and easy banking. Your financial freedom starts here.
             </p>
-            <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <Button variant="accent" size="lg" className="btn-accent me-sm-3">Open an Account</Button>
-              <Button variant="outline-light" size="lg" className="btn-accent">Learn More</Button>
+            <div className="d-grid gap-2 d-sm-flex my-3">
+              <Button variant="primary" size="lg" className="me-sm-3">Get Started</Button>
+
             </div>
+          </Col>
+          <Col lg={6} md={12} className="text-center slide-up-animation">
+            <img src={assets.HeroImage} alt="Digital Banking" className="hero-image" />
           </Col>
         </Row>
       </Container>

@@ -1,11 +1,6 @@
 import { Card, Row, Col, Container } from "react-bootstrap";
-import {
-  FaPiggyBank,
-  FaHandHoldingUsd,
-  FaChartLine,
-  FaMoneyCheckAlt,
-  FaMobileAlt,
-} from "react-icons/fa";
+import { FaPiggyBank, FaHandHoldingUsd, FaChartLine, FaCashRegister, FaMobileAlt } from "react-icons/fa";
+
 
 const Services = () => {
   const services = [
@@ -25,7 +20,7 @@ const Services = () => {
       text: "Grow your wealth with our diverse range of investment plans.",
     },
     {
-      icon: <FaMoneyCheckAlt size={50} className="text-primary" />,
+      icon: <FaCashRegister size={50} className="text-primary" />,
       title: "SwiftPay POS Solutions",
       text: "Efficiently manage your business transactions with our reliable and secure POS solutions.",
     },

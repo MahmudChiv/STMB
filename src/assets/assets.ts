@@ -1,18 +1,40 @@
 import logo from "./main_logo.svg";
 import promo1 from "./promo1.png";
-import promo2 from "./promo2.png";
-import promo3 from "./promo3.png";
-import promo4 from "./promo4.png";
-import promo5 from "./promo5.png";
+import financialLiteracy from "./financialLiteracy.jpg";
+import pos from "./pos.jpg";
+import posMerchant from "./posMerchant.jpg";
+import quickLoans from "./quickLoans.jpg";
 import banking from "./Banking.jpg";
+import HeroImage from "./HeroImage.jpg";
+import savings from "./savings.jpg";
+import women from "./women.jpg";
+import youth from "./youth.jpg";
+import community from "./community.jpg";
+import businesses from "./businesses.jpg";
+import trust from "./trust.jpg";
+import digitalLunch from "./digitalLunch.jpg";
+import communityProject from "./communityProject.jpg";
+import reward from "./reward.jpg";
+import features from "./features.png"
 
 
 export const assets = {
   logo,
   promo1,
-  promo2,
-  promo3,
-  promo4,
-  promo5,
-  banking
+  financialLiteracy,
+  pos,
+  posMerchant,
+  quickLoans,
+  banking,
+  HeroImage,
+  savings,
+  women,
+  youth,
+  community,
+  businesses,
+  trust,
+  communityProject,
+  reward,
+  digitalLunch,
+  features
 };

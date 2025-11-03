@@ -7,11 +7,11 @@ import News from "./components/News";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
 import Business from "./components/Business";
 import AnimatedSection from "./components/AnimatedSection";
 import AboutUs from "./components/AboutUs";
 import InternetBanking from "./components/InternetBanking"
+import Features from "./components/Features";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -35,9 +35,9 @@ const MainLayout = () => {
             <Hero />
             <AnimatedSection><Services /></AnimatedSection>
             <AnimatedSection><Business /></AnimatedSection>
+            <AnimatedSection><Features /></AnimatedSection>
             <AnimatedSection><Promotion /></AnimatedSection>
             <AnimatedSection><Community /></AnimatedSection>
-            <AnimatedSection><Testimonials /></AnimatedSection>
             <AnimatedSection><News /></AnimatedSection>
             <AnimatedSection><Contact /></AnimatedSection>
           </>

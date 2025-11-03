@@ -164,23 +164,30 @@ a:hover {
   color: var(--primary-color); /* Ensure heading is green */
 }
 
+.py-6 { padding-top: 5rem; padding-bottom: 5rem; }
+
 .hero-section .btn-primary {
-  background-color: var(--secondary-color); /* Darker button for contrast */
-  border-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .hero-section .btn-primary:hover {
-  background-color: var(--text-color);
-  border-color: var(--text-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
-.hero-section .btn-accent {
-  background-color: transparent;
-  border-color: var(--primary-color);
+.hero-section .btn-outline-secondary {
   color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
 }
 
-.hero-section .btn-accent:hover {
+.hero-section .btn-outline-secondary:hover {
   background-color: var(--primary-color);
   color: var(--light-text-color);
 }
@@ -314,10 +321,16 @@ a:hover {
   transform: translateY(0);
 }
 
-.hero-content-animated {
-  animation: slideUp 1.5s ease-out forwards; /* Increased duration to 1.5s */
-  animation-delay: 0.5s; /* Keep delay */
-  opacity: 0; /* Start invisible */
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slide-up-animation {
+  animation: slideUp 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
 .internet-banking-page {

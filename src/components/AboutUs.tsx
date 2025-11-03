@@ -19,20 +19,6 @@ const AboutUs = () => {
             </p>
           </Col>
         </Row>
-        <Row className="text-center mt-5">
-          <Col>
-            <h3 className="display-4 fw-bold text-primary">1M+</h3>
-            <p className="lead text-secondary">Happy Customers</p>
-          </Col>
-          <Col>
-            <h3 className="display-4 fw-bold text-primary">100+</h3>
-            <p className="lead text-secondary">Branches Nationwide</p>
-          </Col>
-          <Col>
-            <h3 className="display-4 fw-bold text-primary">$1B+</h3>
-            <p className="lead text-secondary">In Transactions</p>
-          </Col>
-        </Row>
       </Container>
     </section>
   );

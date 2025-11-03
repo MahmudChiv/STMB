@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import { assets } from "../assets/assets";
 
 const AboutUs = () => {
   return (
@@ -6,7 +7,7 @@ const AboutUs = () => {
       <Container>
         <Row className="align-items-center">
           <Col lg={6} md={12}>
-            <img src="https://via.placeholder.com/500x500.png?text=About+Us" alt="About Us" className="img-fluid" />
+            <img src={assets.aboutUs} alt="About Us" className="img-fluid" />
           </Col>
           <Col lg={6} md={12}>
             <h2 className="display-4 fw-bold text-primary">About Swift Trust MFB</h2>

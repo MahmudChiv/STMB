@@ -15,7 +15,8 @@ import trust from "./trust.jpg";
 import digitalLunch from "./digitalLunch.jpg";
 import communityProject from "./communityProject.jpg";
 import reward from "./reward.jpg";
-import features from "./features.png"
+import features from "./features.png";
+import aboutUs from "./aboutUs.jpg"
 
 
 export const assets = {
@@ -36,5 +37,6 @@ export const assets = {
   communityProject,
   reward,
   digitalLunch,
-  features
+  features,
+  aboutUs
 };

@@ -34,7 +34,6 @@ const Services = () => {
   return (
     <section id="services" className="py-5">
       <Container>
-        <h2 className="text-center mb-5 display-4 fw-bold">Our Services</h2>
         <Row>
           {services.map((service, index) => (
             <Col md={4} key={index} className="mb-4">

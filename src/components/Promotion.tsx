@@ -1,10 +1,11 @@
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 import { assets } from "../assets/assets";
+import "./Promotion.css";
 
 const Promotion = () => {
   const promotions = [
     {
-      image: assets.promo1,
+      image: assets.card,
       title: "SwiftTrust Debit Card",
       text: "Enjoy secure payments worldwide with our Verve debit card.",
     },
@@ -38,10 +39,10 @@ const Promotion = () => {
           {promotions.map((promo, index) => (
             <Col lg={4} md={6} sm={12} key={index} className="mb-4">
               <Card className="h-100 shadow-sm border-0 promotion-card">
-                <Card.Img variant="top" src={promo.image} alt={promo.title} />
+                <Card.Img variant="top" src={promo.image} alt={promo.title} className="promotion-card-img" />
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className="h5 fw-bold">{promo.title}</Card.Title>
-                  <Card.Text className="flex-grow-1">{promo.text}</Card.Text>
+                  <Card.Text className="flex-grow-1 lead">{promo.text}</Card.Text>
                   <Button variant="primary" className="mt-3 btn-primary">
                     Learn More
                   </Button>

@@ -156,7 +156,7 @@ a:hover {
 .hero-section {
   background-color: var(--background-color); /* Very light green background */
   color: var(--text-color);
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 80px;
 }
 

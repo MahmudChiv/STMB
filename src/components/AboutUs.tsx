@@ -14,7 +14,7 @@ const AboutUs = () => {
             <p className="lead text-secondary">
               Your trusted partner in financial growth and community development.
             </p>
-            <p className="text-secondary">
+            <p className="text-secondary lead">
               SwiftTrust MFB was established to close Nigeria’s financial access gap by creating a trusted platform for individuals, businesses, and underserved communities to access affordable and reliable banking services. Over the years, we have expanded our product portfolio, developed digital channels for faster and safer transactions, and built a strong governance structure that ensures compliance and customer trust.
             </p>
           </Col>

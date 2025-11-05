@@ -48,7 +48,7 @@ const Community = () => {
                 <Card.Img variant="top" src={initiative.image} alt={initiative.title} />
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className="h5 fw-bold">{initiative.title}</Card.Title>
-                  <Card.Text className="flex-grow-1">{initiative.text}</Card.Text>
+                  <Card.Text className="flex-grow-1 lead">{initiative.text}</Card.Text>
                 </Card.Body>
               </Card>
             </Col>

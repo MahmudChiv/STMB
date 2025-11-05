@@ -25,7 +25,7 @@ const InternetBanking = () => {
                 <Button variant="primary" type="submit" className="btn-primary w-100 mb-3 btn-lg">
                   Login
                 </Button>
-                <p className="text-center text-secondary small">
+                <p className="text-center text-secondary small lead">
                   Don't have an account? <Link to="#set-up-internet-banking" className="text-primary">Set Up Internet Banking</Link>
                 </p>
               </Form>

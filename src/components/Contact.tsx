@@ -10,9 +10,9 @@ const Contact = () => {
             <Row>
               <Col md={6} className="mb-4 mb-md-0">
                 <h3 className="mb-4">Get in Touch</h3>
-                <p>Have a question or a project in mind? We'd love to hear from you.</p>
-                <p><strong>Email:</strong> info@swiftrustmfb.com</p>
-                <p><strong>Phone:</strong> +234 123 456 7890</p>
+                <p className="lead">Have a question or a project in mind? We'd love to hear from you.</p>
+                <p className="lead"><strong>Email:</strong> info@swiftrustmfb.com</p>
+                <p className="lead"><strong>Phone:</strong> +234 123 456 7890</p>
               </Col>
               <Col md={6}>
                 <Form>

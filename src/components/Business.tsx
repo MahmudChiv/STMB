@@ -1,5 +1,5 @@
 import { FaRegCreditCard, FaHandshake, FaShieldAlt } from "react-icons/fa";
-import { Row, Col, Container, Button } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 const Business = () => {
   return (
@@ -15,9 +15,6 @@ const Business = () => {
               Our tailored financial solutions are designed to streamline your
               operations, boost your capital, and secure your future.
             </p>
-            <Button variant="primary" size="lg" className="btn-primary">
-              Discover Business Solutions
-            </Button>
           </Col>
           <Col md={6}>
             <div className="d-flex align-items-start mb-4">
@@ -26,8 +23,7 @@ const Business = () => {
               </div>
               <div>
                 <h5 className="fw-bold">Flexible Credit Solutions</h5>
-                <p className="text-muted mb-0">
-                  Access working capital and credit facilities designed to match
+                <p className="text-muted mb-0 lead">
                   your business cycle and expansion plans.
                 </p>
               </div>
@@ -38,7 +34,7 @@ const Business = () => {
               </div>
               <div>
                 <h5 className="fw-bold">Partnership & Support</h5>
-                <p className="text-muted mb-0">
+                <p className="text-muted mb-0 lead">
                   Benefit from expert financial advice and dedicated support to
                   navigate market challenges and opportunities.
                 </p>
@@ -50,7 +46,7 @@ const Business = () => {
               </div>
               <div>
                 <h5 className="fw-bold">Secure & Efficient Transactions</h5>
-                <p className="text-muted mb-0">
+                <p className="text-muted mb-0 lead">
                   Utilize our robust platforms for secure, fast, and reliable
                   business transactions and payments.
                 </p>

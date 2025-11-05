@@ -36,7 +36,7 @@ const News = () => {
                 <Card.Img variant="top" src={article.image} alt={article.title} />
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className="h5 fw-bold">{article.title}</Card.Title>
-                  <Card.Text className="flex-grow-1">{article.text}</Card.Text>
+                  <Card.Text className="flex-grow-1 lead">{article.text}</Card.Text>
                   <Button variant="primary" href={article.link} className="mt-3 btn-primary">
                     Read More
                   </Button>

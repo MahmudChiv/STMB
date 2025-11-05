@@ -1,0 +1,4 @@
+.promotion-card-img {
+  height: 180px; /* Adjust as needed */
+  object-fit: cover;
+}

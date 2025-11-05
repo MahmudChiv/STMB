@@ -1,0 +1,41 @@
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.img-container {
+  width: fit-content;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-phone-image {
+    max-width: 100%;
+    height: auto;
+    transform: translateX(-30%) translateY(20%) rotate(25deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-phone-image {
+    max-width: 70%;
+    margin-bottom: 50px;
+  }
+}
+
+.hero-text-content {
+  text-align: left;
+  height: fit-content;
+  /* width: fit-content; */
+}
+
+.hero-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}

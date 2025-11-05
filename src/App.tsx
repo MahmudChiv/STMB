@@ -12,11 +12,16 @@ import AnimatedSection from "./components/AnimatedSection";
 import AboutUs from "./components/AboutUs";
 import InternetBanking from "./components/InternetBanking"
 import Features from "./components/Features";
+import ServicesPage from "./components/ServicesPage";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndConditions from "./components/TermsAndConditions";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/internet-banking" element={<InternetBanking />} />
         <Route path="/*" element={<MainLayout />} />
@@ -32,7 +37,7 @@ const MainLayout = () => {
       <Routes>
         <Route path="/" element={
           <>
-            <Hero />
+            <AnimatedSection><Hero /></AnimatedSection>
             <AnimatedSection><Services /></AnimatedSection>
             <AnimatedSection><Business /></AnimatedSection>
             <AnimatedSection><Features /></AnimatedSection>
@@ -43,6 +48,9 @@ const MainLayout = () => {
           </>
         } />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
       <Footer />
     </>

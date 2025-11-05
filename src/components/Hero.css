@@ -27,6 +27,13 @@ a{
   /* width: fit-content; */
 }
 
+@media (max-width: 991px) {
+  .hero-text-content h1,
+  .hero-text-content p {
+    text-align: center !important;
+  }
+}
+
 .hero-logo {
   width: 150px;
   margin-bottom: 20px;

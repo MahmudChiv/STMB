@@ -21,10 +21,10 @@ const Hero = () => {
               alt="Swift Trust Logo"
               className="hero-logo"
             />
-            <h1 className="display-4 fw-bold my-3 text-sm-center text-lg-start">
+            <h1 className="display-4 fw-bold my-3">
               Your Money. Your Trust. <br /> Your Swift.
             </h1>
-            <p className="lead mb-4 text-sm-center text-lg-start">
+            <p className="lead mb-4">
               Join millions who trust us for fast, secure, and easy banking.
               Your financial freedom starts here. Send money, pay bills, and
               manage everything effortlessly.

@@ -43,9 +43,7 @@ const Promotion = () => {
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className="h5 fw-bold">{promo.title}</Card.Title>
                   <Card.Text className="flex-grow-1 lead">{promo.text}</Card.Text>
-                  <Button variant="primary" className="mt-3 btn-primary">
-                    Learn More
-                  </Button>
+
                 </Card.Body>
               </Card>
             </Col>

@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets } from "../assets/assets";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom"; // New import
 
 const NavBar: React.FC = () => {
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <Navbar bg="white" expand="lg" className="shadow-sm py-3">
+    <Navbar bg="white" expand="lg" className="shadow-sm py-3" expanded={expanded} onToggle={setExpanded}>
       <Container>
-        <Navbar.Brand as={Link} to="/"> {/* Use Link for brand */}
+        <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
           <img
             src={assets.logo}
             height="30"
@@ -18,17 +20,13 @@ const NavBar: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link as={Link} to="/" className="mx-2">Home</Nav.Link> {/* Use Link for Home */}
-            <Nav.Link as={Link} to="/about" className="mx-2">About Us</Nav.Link> {/* New About Us Link */}
-            <Nav.Link as={Link} to="/services" className="mx-2">Services</Nav.Link>
-
-            <Nav.Link href="#community" className="mx-2">Community</Nav.Link>
-            <Nav.Link href="#news" className="mx-2">News</Nav.Link>
-            <Nav.Link href="#contact" className="mx-2">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/" className="mx-2 lead" onClick={() => setExpanded(false)}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/about" className="mx-2 lead" onClick={() => setExpanded(false)}>About Us</Nav.Link>
+            <Nav.Link as={Link} to="/services" className="mx-2 lead" onClick={() => setExpanded(false)}>Services</Nav.Link>
+            <Nav.Link as={Link} to="/#contact" className="mx-2 lead" onClick={() => setExpanded(false)}>Contact</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link as={Link} to="/internet-banking" target="_blank" className="mx-2">Internet Banking</Nav.Link>
-
+            <Nav.Link as={Link} to="/internet-banking" target="_blank" className="mx-2 lead" onClick={() => setExpanded(false)}>Internet Banking</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

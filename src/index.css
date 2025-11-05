@@ -127,6 +127,13 @@ a:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Bloom effect */
 }
 
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25) !important; /* Green shadow */
+}
+
 .btn-accent {
   color: var(--light-text-color);
   background-color: var(--accent-color);
@@ -349,5 +356,15 @@ a:hover {
 
 .form-control-custom:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25); /* Green shadow on focus */
+  box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25); /* Green shadow */
+}
+
+.form-check-green .form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.form-check-green .form-check-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25); /* Green shadow */
 }

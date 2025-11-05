@@ -1,0 +1,29 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.scroll-to-top-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top-button:hover,
+.scroll-to-top-button:active,
+.scroll-to-top-button:focus {
+  background-color: #218838 !important;
+  border-color: #218838 !important;
+  box-shadow: none !important;
+}

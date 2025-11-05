@@ -6,6 +6,7 @@ import posMerchant from "./posMerchant.jpg";
 import quickLoans from "./quickLoans.jpg";
 import banking from "./Banking.jpg";
 import HeroImage from "./Hero.png";
+import featuresImage from "./features.png";
 import savings from "./savings.jpg";
 import women from "./women.jpg";
 import youth from "./youth.jpg";
@@ -15,19 +16,20 @@ import trust from "./trust.jpg";
 import digitalLunch from "./digitalLunch.jpg";
 import communityProject from "./communityProject.jpg";
 import reward from "./reward.jpg";
-import features from "./features.png";
+import footerImg from "./footerImg.png";
 import aboutUs from "./aboutUs.jpg";
 
 
 export const assets = {
   logo,
+  HeroImage,
   card,
   financialLiteracy,
   pos,
   posMerchant,
   quickLoans,
   banking,
-  HeroImage,
+  featuresImage,
   savings,
   women,
   youth,
@@ -37,6 +39,6 @@ export const assets = {
   communityProject,
   reward,
   digitalLunch,
-  features,
-  aboutUs
+  footerImg,
+  aboutUs,
 };

@@ -12,7 +12,7 @@ const Hero = () => {
             <img
               src={assets.HeroImage}
               alt="Swift Trust App"
-              className="hero-phone-image"
+              className="hero-image"
             />
           </Col>
           <Col lg={6} md={12} className="hero-text-content">
@@ -21,10 +21,10 @@ const Hero = () => {
               alt="Swift Trust Logo"
               className="hero-logo"
             />
-            <h1 className="display-4 fw-bold my-3">
+            <h1 className="display-4 fw-bold my-3 text-sm-center text-lg-start">
               Your Money. Your Trust. <br /> Your Swift.
             </h1>
-            <p className="lead mb-4">
+            <p className="lead mb-4 text-sm-center text-lg-start">
               Join millions who trust us for fast, secure, and easy banking.
               Your financial freedom starts here. Send money, pay bills, and
               manage everything effortlessly.

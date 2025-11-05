@@ -37,9 +37,7 @@ const News = () => {
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className="h5 fw-bold">{article.title}</Card.Title>
                   <Card.Text className="flex-grow-1 lead">{article.text}</Card.Text>
-                  <Button variant="primary" href={article.link} className="mt-3 btn-primary">
-                    Read More
-                  </Button>
+
                 </Card.Body>
               </Card>
             </Col>

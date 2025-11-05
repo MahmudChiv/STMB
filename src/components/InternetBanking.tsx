@@ -1,6 +1,7 @@
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import { assets } from '../assets/assets';
 import { Link } from 'react-router-dom';
+import ScrollToTopButton from './ScrollToTopButton';
 
 const InternetBanking = () => {
   return (
@@ -19,7 +20,7 @@ const InternetBanking = () => {
                   <Form.Control type="password" placeholder="Password" className="form-control-lg" />
                 </Form.Group>
                 <Form.Group className="mb-4 d-flex justify-content-between align-items-center">
-                  <Form.Check type="checkbox" label="Remember for 30 days" className="text-secondary" />
+                  <Form.Check type="checkbox" label="Remember for 30 days" className="text-secondary form-check-green" />
                   <Link to="#forgot-password" className="text-primary small">Forgot Password?</Link>
                 </Form.Group>
                 <Button variant="primary" type="submit" className="btn-primary w-100 mb-3 btn-lg">
@@ -36,6 +37,7 @@ const InternetBanking = () => {
           </Col>
         </Row>
       </Container>
+      <ScrollToTopButton />
     </div>
   );
 };

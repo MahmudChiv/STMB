@@ -30,6 +30,8 @@ const App = () => {
   );
 };
 
+import ScrollToTopButton from "./components/ScrollToTopButton";
+
 const MainLayout = () => {
   return (
     <>
@@ -53,6 +55,7 @@ const MainLayout = () => {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
       <Footer />
+      <ScrollToTopButton />
     </>
   )
 }

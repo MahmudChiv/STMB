@@ -11,7 +11,7 @@ const Footer = () => {
         <Row>
           <Col lg={4} md={12} className="mb-4">
             <img
-              src={assets.logo}
+              src={assets.footerImg}
               alt="Swift Trust MFB Logo"
               height="40"
               className="mb-3"
@@ -28,19 +28,19 @@ const Footer = () => {
             <h5 className="text-primary mb-3">Products</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <span className="text-white text-decoration-none disabled-link">
                   Savings
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <span className="text-white text-decoration-none disabled-link">
                   Loans
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <span className="text-white text-decoration-none disabled-link">
                   Cards
-                </a>
+                </span>
               </li>
             </ul>
           </Col>
@@ -49,19 +49,12 @@ const Footer = () => {
             <h5 className="text-primary mb-3">Company</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <Link
+                  to="/about-us"
+                  className="text-white text-decoration-none"
+                >
                   About Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white text-decoration-none">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white text-decoration-none">
-                  Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </Col>
@@ -70,7 +63,10 @@ const Footer = () => {
             <h5 className="text-primary mb-3">Legal</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/terms-and-conditions" className="text-white text-decoration-none">
+                <Link
+                  to="/terms-and-conditions"
+                  className="text-white text-decoration-none"
+                >
                   Terms & Conditions
                 </Link>
               </li>

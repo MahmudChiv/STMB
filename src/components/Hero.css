@@ -9,23 +9,15 @@ a{
   text-decoration: none;
 }
 
-.img-container {
-  width: fit-content;
-  overflow: hidden;
-}
 
-@media screen and (min-width: 768px) {
-  .hero-phone-image {
-    max-width: 100%;
-    height: auto;
-    transform: translateX(-30%) translateY(20%) rotate(25deg);
+
+@media screen and (max-width: 991px) {
+  .img-container, .hero-logo {
+    display: none;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-phone-image {
-    max-width: 70%;
-    margin-bottom: 50px;
+  
+  .hero-text-content .d-sm-flex {
+    justify-content: center !important;
   }
 }
 

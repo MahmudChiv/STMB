@@ -498,3 +498,10 @@ a:hover {
     margin-bottom: 20px; /* Add margin to the bottom of the image */
   }
 }
+
+@media screen and (max-width: 767px) {
+  .features-text-content {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

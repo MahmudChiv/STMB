@@ -13,16 +13,14 @@ const Features: React.FC = () => {
               <Image src={assets.featuresImage} fluid alt="Features" />
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={6} className="features-text-content">
             <h2 className="display-4 fw-bold mb-4">Amazing Features</h2>
             <p className="lead">
               Discover the amazing features that make our service stand out.
             </p>
-            <ul>
-              <li className="lead">Quick and easy Transfers</li>
-              <li className="lead">Bill payment solutions</li>
-              <li className="lead">Cheap Data and Airtime subscription</li>
-            </ul>
+            <p className="lead">Quick and easy Transfers</p>
+            <p className="lead">Bill payment solutions</p>
+            <p className="lead">Cheap Data and Airtime subscription</p>
           </Col>
         </Row>
       </Container>

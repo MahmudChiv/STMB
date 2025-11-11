@@ -235,7 +235,18 @@ a:hover {
 }
 
 .hero-image-container {
-  transform: none; /* Remove rotation */
+  transform: rotate(10deg); /* Re-introduce rotation */
+  -webkit-mask-image: linear-gradient(to top, transparent 1%, black 10%);
+  mask-image: linear-gradient(to top, transparent 1%, black 10%);
+  overflow: hidden;
+  width: 300px; /* Reduced width */
+  height: 450px; /* Reduced height */
+  position: relative;
+  left: -20px;
+}
+
+.features-image-container {
+  transform: none; /* No rotation */
   -webkit-mask-image: linear-gradient(to top, transparent 1%, black 10%);
   mask-image: linear-gradient(to top, transparent 1%, black 10%);
   overflow: hidden;

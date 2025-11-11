@@ -9,7 +9,7 @@ const Features: React.FC = () => {
       <Container>
         <Row className="align-items-center">
           <Col md={6}>
-            <div className="hero-image-container">
+            <div className="features-image-container">
               <Image src={assets.featuresImage} fluid alt="Features" />
             </div>
           </Col>

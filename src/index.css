@@ -493,4 +493,8 @@ a:hover {
     width: 80%; /* Make it responsive */
     max-width: 300px; /* Limit max width */
   }
+
+  .about-us-image {
+    margin-bottom: 20px; /* Add margin to the bottom of the image */
+  }
 }

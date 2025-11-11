@@ -11,7 +11,7 @@ const Footer = () => {
         <Row>
           <Col lg={4} md={12} className="mb-4">
             <img
-              src={assets.footerImg}
+              src={assets.logoWhite}
               alt="Swift Trust MFB Logo"
               height="40"
               className="mb-3"
@@ -50,7 +50,7 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li>
                 <Link
-                  to="/about-us"
+                  to="/about"
                   className="text-white text-decoration-none"
                 >
                   About Us

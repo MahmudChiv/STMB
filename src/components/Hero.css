@@ -1,40 +1,54 @@
-.hero-section {
-  background-size: cover;
-  background-position: center;
+div.hero-section {
   padding: 100px 0;
+  background-color: #1E8E3E;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.05) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 2px, transparent 2px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.hero-text-content {
+  text-align: left;
+  height: fit-content;
   color: white;
 }
 
-a{
-  text-decoration: none;
+/* .hero-text-content h1,
+.hero-text-content p {
+  color: white;
+} */
+
+.hero-logo {
+  width: 200px;
+  margin-bottom: 20px;
 }
 
-
-
 @media screen and (max-width: 991px) {
-  .img-container, .hero-logo {
+  .hero-logo {
     display: none;
   }
   
   .hero-text-content .d-sm-flex {
     justify-content: center !important;
   }
-}
 
-.hero-text-content {
-  text-align: left;
-  height: fit-content;
-  /* width: fit-content; */
-}
+  .hero-image-container {
+    transform: none; /* Remove rotation */
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, black 10%); /* Keep masking */
+    mask-image: linear-gradient(to top, transparent 1%, black 10%); /* Keep masking */
+    width: 250px; /* Further adjusted width for mobile */
+    height: 350px; /* Further adjusted height for mobile */
+    position: relative; /* Keep relative positioning */
+    left: auto; /* Remove fixed left offset */
+    margin: 0 auto 20px; /* Center the image */
+  }
 
-@media (max-width: 991px) {
   .hero-text-content h1,
   .hero-text-content p {
-    text-align: center !important;
+    text-align: center !important; /* Centralize texts */
   }
-}
-
-.hero-logo {
-  width: 150px;
-  margin-bottom: 20px;
 }

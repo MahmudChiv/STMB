@@ -14,12 +14,20 @@
 body {
   font-family: var(--font-family-sans-serif);
   line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: var(--light-text-color);
+  background-color: #1E8E3E;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.05) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 2px, transparent 2px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Basic resets */
@@ -30,7 +38,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
+  color: var(--light-text-color);
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -38,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: var(--secondary-color); /* Lighter green for small paragraphs */
+  color: var(--light-text-color);
 }
 
 a {
@@ -148,16 +156,39 @@ a:hover {
 }
 
 /* Navbar specific styling */
+.app-wrapper {
+  overflow-x: hidden;
+}
+
+.bg-white {
+  background-color: white !important;
+  background-image: none !important;
+  color: var(--text-color) !important;
+}
+
+.bg-white h1,
+.bg-white h2,
+.bg-white h3,
+.bg-white h4,
+.bg-white h5,
+.bg-white h6 {
+  color: var(--primary-color) !important;
+}
+
+.bg-white p {
+  color: var(--text-color) !important;
+}
+
 .navbar {
-  background-color: var(--primary-color) !important; /* Green nav background */
+  background-color: white !important; /* White nav background */
 }
 
 .navbar .nav-link, .navbar-brand {
-  color: var(--light-text-color) !important;
+  color: var(--primary-color) !important;
 }
 
 .navbar .nav-link:hover {
-  color: rgba(255, 255, 255, 0.75) !important;
+  color: var(--accent-color) !important;
 }
 
 .hero-section {
@@ -169,6 +200,53 @@ a:hover {
 
 .hero-section h1 {
   color: var(--primary-color); /* Ensure heading is green */
+}
+
+#features h2 {
+  color: var(--primary-color) !important;
+}
+
+#about-us {
+  color: var(--light-text-color) !important;
+}
+
+#about-us h2 {
+  color: var(--light-text-color) !important;
+}
+
+#about-us p {
+  color: var(--light-text-color) !important;
+}
+
+.about-us-image {
+  border-radius: 10px;
+}
+
+#services-page h1 {
+  color: var(--light-text-color) !important;
+}
+
+#services-page h3 {
+  color: var(--primary-color) !important;
+}
+
+#services-page p {
+  color: var(--text-color) !important;
+}
+
+.hero-image-container {
+  transform: none; /* Remove rotation */
+  -webkit-mask-image: linear-gradient(to top, transparent 1%, black 10%);
+  mask-image: linear-gradient(to top, transparent 1%, black 10%);
+  overflow: hidden;
+  width: 300px; /* Reduced width */
+  height: 450px; /* Reduced height */
+  position: relative;
+  left: -20px;
+}
+
+#services .service-card .card-title {
+  color: var(--primary-color) !important;
 }
 
 .py-6 { padding-top: 5rem; padding-bottom: 5rem; }
@@ -203,6 +281,9 @@ a:hover {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   border-radius: 10px;
   overflow: hidden;
+  background-color: white; /* Explicitly set white background */
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.15); /* Add a stronger default shadow */
+  border: 1px solid #eee; /* Add a subtle border */
 }
 
 .service-card:hover {
@@ -284,6 +365,22 @@ a:hover {
 .news-card .card-img-top {
   height: 200px; /* Fixed height for images */
   object-fit: cover; /* Ensure images cover the area */
+}
+
+.promotion-card h5 {
+  color: var(--primary-color) !important;
+}
+
+.promotion-card p {
+  color: var(--text-color) !important;
+}
+
+.news-card h5 {
+  color: var(--primary-color) !important;
+}
+
+.news-card p {
+  color: var(--text-color) !important;
 }
 
 .contact-form-card {

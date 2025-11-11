@@ -34,19 +34,19 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const MainLayout = () => {
   return (
-    <>
+    <div className="app-wrapper">
       <NavBar />
       <Routes>
         <Route path="/" element={
           <>
             <AnimatedSection><Hero /></AnimatedSection>
-            <AnimatedSection><Services /></AnimatedSection>
+            <AnimatedSection className="bg-white"><Services /></AnimatedSection>
             <AnimatedSection><Business /></AnimatedSection>
-            <AnimatedSection><Features /></AnimatedSection>
+            <AnimatedSection className="bg-white"><Features /></AnimatedSection>
             <AnimatedSection><Promotion /></AnimatedSection>
-            <AnimatedSection><Community /></AnimatedSection>
+            <AnimatedSection className="bg-white"><Community /></AnimatedSection>
             <AnimatedSection><News /></AnimatedSection>
-            <AnimatedSection><Contact /></AnimatedSection>
+            <AnimatedSection className="bg-white"><Contact /></AnimatedSection>
           </>
         } />
         <Route path="/about" element={<AboutUs />} />
@@ -56,7 +56,7 @@ const MainLayout = () => {
       </Routes>
       <Footer />
       <ScrollToTopButton />
-    </>
+    </div>
   )
 }
 

@@ -3,9 +3,10 @@ import { useRef, useEffect, useState } from 'react';
 interface AnimatedSectionProps {
   children: React.ReactNode;
   animationType?: 'fade-in' | 'slide-up'; // Future expansion
+  className?: string;
 }
 
-const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children }) => {
+const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children, className }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -36,7 +37,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children }) => {
   }, []);
 
   return (
-    <div ref={sectionRef} className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}>
+    <div ref={sectionRef} className={`fade-in-section ${isVisible ? 'is-visible' : ''} ${className || ''}`}>
       {children}
     </div>
   );

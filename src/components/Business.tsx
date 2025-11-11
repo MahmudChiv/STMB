@@ -7,10 +7,10 @@ const Business = () => {
       <Container>
         <Row className="align-items-center justify-content-between">
           <Col md={5} className="mb-4 mb-md-0">
-            <h2 className="display-4 fw-bold mb-4">
+            <h2 className="display-4 fw-bold mb-4 text-white">
               Empowering Your Business Growth
             </h2>
-            <p className="lead mb-4">
+            <p className="lead mb-4 text-white">
               At Swift Trust MFB, we understand the unique needs of businesses.
               Our tailored financial solutions are designed to streamline your
               operations, boost your capital, and secure your future.
@@ -22,8 +22,10 @@ const Business = () => {
                 <FaRegCreditCard size={30} />
               </div>
               <div>
-                <h5 className="fw-bold">Flexible Credit Solutions</h5>
-                <p className="text-muted mb-0 lead">
+                <h5 className="fw-bold text-white">
+                  Flexible Credit Solutions
+                </h5>
+                <p className="text-white mb-0 lead">
                   your business cycle and expansion plans.
                 </p>
               </div>
@@ -33,8 +35,8 @@ const Business = () => {
                 <FaHandshake size={30} />
               </div>
               <div>
-                <h5 className="fw-bold">Partnership & Support</h5>
-                <p className="text-muted mb-0 lead">
+                <h5 className="fw-bold text-white">Partnership & Support</h5>
+                <p className="text-white mb-0 lead">
                   Benefit from expert financial advice and dedicated support to
                   navigate market challenges and opportunities.
                 </p>
@@ -45,8 +47,10 @@ const Business = () => {
                 <FaShieldAlt size={30} />
               </div>
               <div>
-                <h5 className="fw-bold">Secure & Efficient Transactions</h5>
-                <p className="text-muted mb-0 lead">
+                <h5 className="fw-bold text-white">
+                  Secure & Efficient Transactions
+                </h5>
+                <p className="text-white mb-0 lead">
                   Utilize our robust platforms for secure, fast, and reliable
                   business transactions and payments.
                 </p>

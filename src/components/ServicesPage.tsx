@@ -49,7 +49,9 @@ const ServicesPage = () => {
                       <div className="service-icon mb-3">{service.icon}</div>
                     </Col>
                     <Col md={10}>
-                      <Card.Title className="h3 mb-3">{service.title}</Card.Title>
+                      <Card.Title className="h3 mb-3 text-success">
+                        {service.title}
+                      </Card.Title>
                       <Card.Text className="lead">{service.text}</Card.Text>
                     </Col>
                   </Row>

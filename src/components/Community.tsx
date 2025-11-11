@@ -45,10 +45,18 @@ const Community = () => {
           {communityInitiatives.map((initiative, index) => (
             <Col lg={4} md={6} sm={12} key={index} className="mb-4">
               <Card className="h-100 shadow-sm border-0 community-card">
-                <Card.Img variant="top" src={initiative.image} alt={initiative.title} />
+                <Card.Img
+                  variant="top"
+                  src={initiative.image}
+                  alt={initiative.title}
+                />
                 <Card.Body className="d-flex flex-column">
-                  <Card.Title className="h5 fw-bold">{initiative.title}</Card.Title>
-                  <Card.Text className="flex-grow-1 lead">{initiative.text}</Card.Text>
+                  <Card.Title className="h5 fw-bold text-success">
+                    {initiative.title}
+                  </Card.Title>
+                  <Card.Text className="flex-grow-1 lead">
+                    {initiative.text}
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>

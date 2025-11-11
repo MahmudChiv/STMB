@@ -7,24 +7,26 @@ const Hero = () => {
   return (
     <div className="hero-section">
       <Container>
-        <Row className="align-items-center" style={{ padding: "30px" }}>
-          <Col lg={6} md={12} className="text-center img-container">
-            <img
-              src={assets.HeroImage}
-              alt="Swift Trust App"
-              className="hero-image"
-            />
+        <Row className="align-items-center">
+          <Col lg={6} md={12} className="text-center">
+            <div className="hero-image-container">
+              <img
+                src={assets.HeroImage}
+                alt="Swift Trust App"
+                className="hero-image"
+              />
+            </div>
           </Col>
           <Col lg={6} md={12} className="hero-text-content">
             <img
-              src={assets.logo}
+              src={assets.logoWhite}
               alt="Swift Trust Logo"
               className="hero-logo"
             />
-            <h1 className="display-4 fw-bold my-3">
+            <h1 className="display-4 fw-bold my-3 text-white">
               Your Money. Your Trust. <br /> Your Swift.
             </h1>
-            <p className="lead mb-4">
+            <p className="lead mb-4 text-white">
               Join millions who trust us for fast, secure, and easy banking.
               Your financial freedom starts here. Send money, pay bills, and
               manage everything effortlessly.

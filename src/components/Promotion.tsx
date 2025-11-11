@@ -1,4 +1,4 @@
-import { Card, Container, Row, Col, Button } from "react-bootstrap";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import { assets } from "../assets/assets";
 import "./Promotion.css";
 
@@ -32,7 +32,7 @@ const Promotion = () => {
   ];
 
   return (
-    <section id="promotions" className="py-5 bg-light">
+    <section id="promotions" className="py-5">
       <Container>
         <h2 className="text-center mb-5 display-4 fw-bold">Our Promotions</h2>
         <Row className="justify-content-center">
@@ -41,7 +41,7 @@ const Promotion = () => {
               <Card className="h-100 shadow-sm border-0 promotion-card">
                 <Card.Img variant="top" src={promo.image} alt={promo.title} className="promotion-card-img" />
                 <Card.Body className="d-flex flex-column">
-                  <Card.Title className="h5 fw-bold">{promo.title}</Card.Title>
+                  <Card.Title className="h5 fw-bold text-success">{promo.title}</Card.Title>
                   <Card.Text className="flex-grow-1 lead">{promo.text}</Card.Text>
 
                 </Card.Body>

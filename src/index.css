@@ -476,3 +476,21 @@ a:hover {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25); /* Green shadow */
 }
+
+.features-row > .col-md-6:first-child {
+  padding-right: 0;
+}
+
+.features-row > .col-md-6:last-child {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .features-image-container {
+    left: auto; /* Remove fixed left offset */
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure margin: auto works */
+    width: 80%; /* Make it responsive */
+    max-width: 300px; /* Limit max width */
+  }
+}

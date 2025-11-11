@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="hero-section">
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center hero-row">
           <Col lg={6} md={12} className="text-center">
             <div className="hero-image-container">
               <img

@@ -7,7 +7,7 @@ const Features: React.FC = () => {
   return (
     <section id="features" className="py-5">
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center features-row">
           <Col md={6}>
             <div className="features-image-container">
               <Image src={assets.featuresImage} fluid alt="Features" />

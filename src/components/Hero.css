@@ -27,6 +27,16 @@ div.hero-section {
   margin-bottom: 20px;
 }
 
+.hero-row > .col-lg-6:first-child {
+  padding-right: 0;
+}
+
+.hero-row > .col-lg-6:last-child {
+  padding-left: 0;
+}
+
+
+
 @media screen and (max-width: 991px) {
   .hero-logo {
     display: none;
@@ -37,7 +47,7 @@ div.hero-section {
   }
 
   .hero-image-container {
-    transform: none; /* Remove rotation */
+    transform: rotate(0deg) !important; /* Ensure upright position */
     -webkit-mask-image: linear-gradient(to top, transparent 1%, black 10%); /* Keep masking */
     mask-image: linear-gradient(to top, transparent 1%, black 10%); /* Keep masking */
     width: 250px; /* Further adjusted width for mobile */
@@ -45,6 +55,11 @@ div.hero-section {
     position: relative; /* Keep relative positioning */
     left: auto; /* Remove fixed left offset */
     margin: 0 auto 20px; /* Center the image */
+    display: block; /* Ensure margin: auto works */
+  }
+
+  .hero-image {
+    transform: rotate(0deg) !important; /* Ensure upright position */
   }
 
   .hero-text-content h1,
